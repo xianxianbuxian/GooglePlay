@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/dl_drawer"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jack.example.com.googleplay.ui.activity.MainActivity">
+<jack.example.com.googleplay.ui.activity.view.PagerTab
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:id="@+id/pager_tab"
+    android:background="@drawable/bg_tab"
+    />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+    <FrameLayout
+        android:layout_width="300dp"
+        android:background="#000"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我是侧边栏"
+            android:textColor="#fff"
+            />
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>
